@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.sappari.air_visualizer.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="left"
+            android:layout_margin="8dp"
+            >
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/radio_laminar_flow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/laminar_flow"
+                    android:textColor="@color/white"
+                    android:checked="true"
+                    />
+                <RadioButton
+                    android:id="@+id/radio_turbulent_flow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/turbulent_flow"
+                    android:textColor="@color/white"
+                    />
+            </RadioGroup>
+            <Button
+                android:id="@+id/button_start"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:backgroundTint="@color/teal_700"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/start" />
+            <Button
+                android:id="@+id/button_reset"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/reset"
+                android:backgroundTint="@color/teal_700"
+                />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

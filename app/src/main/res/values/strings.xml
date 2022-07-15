@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AirVisualizer</string>
+    <string name="laminar_flow">Laminar</string>
+    <string name="turbulent_flow">Turbulent</string>
+    <string name="start">START</string>
+    <string name="stop">STOP</string>
+    <string name="reset">RESET</string>
+</resources>
