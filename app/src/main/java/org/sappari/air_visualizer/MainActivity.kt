@@ -8,6 +8,7 @@ import android.os.Bundle
 import android.util.Log
 import android.util.Size
 import android.view.WindowInsets
+import android.view.WindowManager
 import android.widget.Toast
 import androidx.camera.core.*
 import androidx.camera.lifecycle.ProcessCameraProvider
@@ -71,6 +72,7 @@ class MainActivity : AppCompatActivity() {
                     viewBinding.radioLaminarFlow.isEnabled = false
                     viewBinding.radioTurbulentFlow.isEnabled = false
                     viewBinding.buttonReset.isEnabled = true
+                    window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
                 }
                 else -> {
                     setFocusAuto()
@@ -79,6 +81,7 @@ class MainActivity : AppCompatActivity() {
                     viewBinding.radioLaminarFlow.isEnabled = true
                     viewBinding.radioTurbulentFlow.isEnabled = true
                     viewBinding.buttonReset.isEnabled = false
+                    window.clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
                 }
             }
         }
