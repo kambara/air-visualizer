@@ -211,7 +211,7 @@ class MainActivity : AppCompatActivity() {
                         addToRecentQuadMarkers(quadMarkers)
                         backgroundCaptureDelayCount++
                         if (backgroundCaptureDelayCount >= 10) {
-                            // Startボタンタップ時のブレ対策のため少し遅らせる
+                            // Slight delay to prevent blurring when tapping the Start button.
                             background = extractMarkerArea(gray, averageRecentQuadMarkers())
                             backgroundCaptureDelayCount = 0
                             backgroundCaptureState = BackgroundCaptureState.CAPTURED
@@ -236,7 +236,7 @@ class MainActivity : AppCompatActivity() {
                     // Update quadMarkers
                     markerDetectionLoopCount++
                     if (markerDetectionLoopCount >= 20) {
-                        // マーカー検出は重いので数フレームおきに実行
+                        // Marker detection is slow, so run at intervals
                         val quadMarkers = detectQuadMarkers(gray)
                         if (quadMarkers != null) {
                             addToRecentQuadMarkers(quadMarkers)
