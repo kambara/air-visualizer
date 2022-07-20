@@ -2,7 +2,8 @@
 
 Android application that visualizes airflow using the BOS method.
 
-[![AirVisualizer](https://img.youtube.com/vi/4s26OHlNUzU/0.jpg)](https://www.youtube.com/watch?v=4s26OHlNUzU)
+[![AirVisualizer](https://img.youtube.com/vi/4s26OHlNUzU/0.jpg)](https://www.youtube.com/watch?v=4s26OHlNUzU)  
+[YouTube](https://www.youtube.com/watch?v=4s26OHlNUzU)
 
 ## Background images
 
