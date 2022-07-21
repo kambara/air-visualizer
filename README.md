@@ -12,7 +12,12 @@ Use the following image on your monitor or print it out on paper.
 
 [kambara/air-visualizer-background/images](https://github.com/kambara/air-visualizer-background/tree/master/images)
 
+## APK
+
+See [releases](https://github.com/kambara/air-visualizer/releases)
+
 ## Note
 
 - Use a tripod in a stable location
+- Works with Android 11 or later
 - Only tested on Pixel 3
